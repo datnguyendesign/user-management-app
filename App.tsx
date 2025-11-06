@@ -4,6 +4,7 @@ import Login from './app/screens/Login';
 import List from './app/screens/List';
 import Details from './app/screens/Details';
 import UserForm from './app/screens/UserForm';
+import UserStats from './app/screens/UserStats';
 import { useEffect, useState } from 'react';
 import { onAuthStateChanged, User } from 'firebase/auth';
 import { FIREBASE_AUTH } from './FirebaseConfig';
@@ -18,6 +19,7 @@ function InsideLayout() {
       <InsideStack.Screen name='User Lists' component={List} />
       <InsideStack.Screen name='UserDetail' component={Details} />
       <InsideStack.Screen name="UserForm" component={UserForm} options={{ title: 'Add / Edit User' }} />
+      <InsideStack.Screen name="UserStats" component={UserStats} options={{ title: 'User Statistics' }} />
     </InsideStack.Navigator>
   );
 }

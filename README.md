@@ -63,6 +63,9 @@ npx expo install react-native-paper
 npx expo install expo-image-picker
 
 npx expo install firebase
+
+# Chart kit 
+expo install react-native-chart-kit react-native-svg
 ```
 
 ---
